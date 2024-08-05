@@ -14,8 +14,8 @@
             android:id="@+id/action_loginFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
         <action
-            android:id="@+id/action_loginFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_loginFragment_to_containerFragment"
+            app:destination="@id/containerFragment" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -27,43 +27,8 @@
             app:destination="@id/loginFragment" />
     </fragment>
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.inventorytracker.ui.fragments.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_inventoryFragment"
-            app:destination="@id/inventoryFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_ordersFragment"
-            app:destination="@id/ordersFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/inventoryFragment"
-        android:name="com.example.inventorytracker.ui.fragments.InventoryFragment"
-        android:label="fragment_inventory"
-        tools:layout="@layout/fragment_inventory" >
-        <action
-            android:id="@+id/action_inventoryFragment_to_inventoryListFragment"
-            app:destination="@id/inventoryListFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/ordersFragment"
-        android:name="com.example.inventorytracker.ui.fragments.OrdersFragment"
-        android:label="fragment_orders"
-        tools:layout="@layout/fragment_orders" />
-    <fragment
-        android:id="@+id/inventoryListFragment"
-        android:name="com.example.inventorytracker.ui.fragments.InventoryListFragment"
-        android:label="fragment_inventory_list"
-        tools:layout="@layout/fragment_inventory_list" >
-        <action
-            android:id="@+id/action_inventoryListFragment_to_itemDetailFragment"
-            app:destination="@id/itemDetailFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/itemDetailFragment"
-        android:name="com.example.inventorytracker.ui.fragments.ItemDetailFragment"
-        android:label="fragment_item_detail"
-        tools:layout="@layout/fragment_item_detail" />
+        android:id="@+id/containerFragment"
+        android:name="com.example.inventorytracker.ui.fragments.ContainerFragment"
+        android:label="fragment_container"
+        tools:layout="@layout/fragment_container" />
 </navigation>
