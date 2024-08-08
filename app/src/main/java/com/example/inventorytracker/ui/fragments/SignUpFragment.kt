@@ -26,7 +26,7 @@ class SignUpFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        signUpBinding.tvAlready.setOnClickListener {
+        signUpBinding.btnSignUp.setOnClickListener {
             findNavController().navigate(R.id.action_signUpFragment_to_loginFragment)
         }
     }

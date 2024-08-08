@@ -24,8 +24,8 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        loginBinding.tvdont.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_signUpFragment)
+        loginBinding.btnLogin.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_containerFragment)
         }
     }
 
